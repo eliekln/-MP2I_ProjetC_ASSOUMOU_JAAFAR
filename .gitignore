@@ -1,0 +1,58 @@
+# Système de fichiers simplifié en C — .gitignore
+# Ignorer les fichiers générés, PAS le code source, les tests ou la documentation.
+
+# Fichiers objet, dépendances et bibliothèques compilées
+*.o
+*.obj
+*.d
+*.a
+*.so
+*.so.*
+*.dll
+*.dylib
+*.lib
+
+# Exécutables et binaires générés
+*.exe
+*.out
+a.out
+/systeme_fichiers
+/systeme_fichiers_asan
+/main
+
+# Dossiers de compilation
+/build/
+/bin/
+/obj/
+/dist/
+/cmake-build-*/
+
+# Rapports de couverture et profilage
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+/coverage/
+
+# Fichiers de crash et débogage
+core
+core.*
+*.stackdump
+*.dSYM/
+
+# Éditeurs et fichiers temporaires
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Sorties temporaires de tests (si créées)
+/tests/tmp/
+/tests/output/
+
+# À CONSERVER sur GitHub :
+# *.c, *.h, Makefile, README.md, TESTS.md, tests/ (hors tmp et output)
